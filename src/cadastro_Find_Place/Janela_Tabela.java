@@ -66,7 +66,8 @@ public class Janela_Tabela extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
+		setIconImage(
+				Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
 	}
 
 	// Configurando caracteristicas da Janela
@@ -284,9 +285,6 @@ public class Janela_Tabela extends JFrame {
 	}
 
 	private void jButton3ActionPerformed(ActionEvent evt) {
-
-		new Janela_Atualizacao().setVisible(true);
-		dispose();
 
 	}
 
