@@ -14,6 +14,7 @@ import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -45,7 +46,7 @@ public class Janela_Atualizacao extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconeJanela.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
 	}
 
 	public static void main(String[] args) {
@@ -118,7 +119,7 @@ public class Janela_Atualizacao extends JFrame {
 					pst.setString(1, barraSearch.getText());
 					rs = pst.executeQuery();
 					while (rs.next()) {
-						
+
 						t1.setText(rs.getString("id"));
 						t2.setText(rs.getString("razaosocial"));
 						t3.setText(rs.getString("nomefantasia"));
@@ -284,7 +285,6 @@ public class Janela_Atualizacao extends JFrame {
 			}
 		});
 
-		
 		p1.add(l1);
 		p3.add(l2);
 		p3.add(t1);

@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -32,7 +33,7 @@ public class Tela_Login extends JFrame {
 	}
 
 	public void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconeJanela.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
 	}
 
 	public static void main(String[] args) {

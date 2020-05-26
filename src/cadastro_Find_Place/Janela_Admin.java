@@ -16,6 +16,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
@@ -44,7 +45,7 @@ public class Janela_Admin extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconeJanela.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
 	}
 
 	public static void main(String[] args) {
@@ -352,6 +353,7 @@ public class Janela_Admin extends JFrame {
 						ps.setBlob(13, is);
 						ps.executeUpdate();
 						JOptionPane.showMessageDialog(null, "Cadastro Concluido Com Sucesso");
+						
 						// Setando todos os Campos em Branco após o Cadastro ser Concluido
 						t2.setText("");
 						t3.setText("");
@@ -365,6 +367,7 @@ public class Janela_Admin extends JFrame {
 						t11.setText("");
 						t12.setText("");
 						t13.setText("");
+						
 
 					} catch (SQLException se) {
 						se.printStackTrace();

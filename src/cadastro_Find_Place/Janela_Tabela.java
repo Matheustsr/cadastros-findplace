@@ -16,6 +16,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.GroupLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -31,6 +32,7 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.WindowConstants;
 import javax.swing.table.DefaultTableModel;
+
 import net.proteanit.sql.DbUtils;
 
 public class Janela_Tabela extends JFrame {
@@ -64,7 +66,7 @@ public class Janela_Tabela extends JFrame {
 	}
 
 	private void setIcon() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconeJanela.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/cadastro_Find_Place/iconeJanela.png")));
 	}
 
 	// Configurando caracteristicas da Janela
@@ -235,7 +237,7 @@ public class Janela_Tabela extends JFrame {
 						.addContainerGap()));
 
 		jPanel2.setBackground(new Color(11, 188, 107));
-		
+
 		// Criando a JTable
 		jTable1.setBackground(new Color(204, 255, 204));
 		jTable1.setFont(new Font("Arial", 0, 14));
